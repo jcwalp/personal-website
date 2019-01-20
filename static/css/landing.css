@@ -1,0 +1,62 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-link, .navbar-brand {
+  color: white !important;
+}
+
+.nav-link {
+  
+}
+
+.intro {
+  background-image: linear-gradient(-45deg, #009FFF, #ec2F4B);
+  background-size: 400% 400%;
+  height: 100%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
