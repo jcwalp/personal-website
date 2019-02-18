@@ -12,9 +12,6 @@ body {
   color: white !important;
 }
 
-.nav-link {
-  
-}
 
 .intro {
   background-image: linear-gradient(-45deg, #009FFF, #ec2F4B);
@@ -23,6 +20,30 @@ body {
   -webkit-animation: Gradient 20s ease infinite;
   -moz-animation: Gradient 20s ease infinite;
   animation: Gradient 20s ease infinite;
+}
+
+.banner {
+  text-align: center;
+  padding-top: 20em;
+}
+
+h1 {
+  padding-top: 2em;
+  color: #ecf0f1;
+  text-rendering: geometricPrecision;
+  font-size: 45px;
+}
+
+p {
+  padding-bottom: 5em;
+  font-size: 24px;
+}
+
+.black-back {
+  background-color: rgba(0,0,0, .2);
+  margin-left: 5em;
+  margin-right: 5em;
+
 }
 
 @-webkit-keyframes Gradient {
