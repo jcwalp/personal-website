@@ -30,14 +30,21 @@ li {
 
 .banner {
   text-align: center;
-  padding-top: 20em;
+  padding-top: 15em;
 }
 
 h1 {
-  padding-top: 2em;
+  padding-top: 4em;
+  padding-left: 2em;
   color: #ecf0f1;
   text-rendering: geometricPrecision;
   font-size: 45px;
+}
+
+hr {
+  background-color: white;
+  width: 25%;
+  margin-left: 6em;
 }
 
 p {
@@ -86,4 +93,12 @@ p {
 	100% {
 		background-position: 0% 50%
 	}
+}
+form {
+  padding: 5em;
+  display: inline-flex;
+}
+
+input {
+  
 }
