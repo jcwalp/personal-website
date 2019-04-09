@@ -1,21 +1,23 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 120%;
 }
 
 body {
   font-family: 'Raleway', sans-serif;
 }
 
-.nav-link, .navbar-brand {
+.nav-link {
   color: white !important;
   display: flex;
   padding-right: 2em !important;
 }
 
-li {
-  justify-content: space-between;
+.navbar-brand {
+  color: white !important;
+  display: flex;
+  padding-left: 2em;
 }
 
 
@@ -30,7 +32,7 @@ li {
 
 .banner {
   text-align: center;
-  padding-top: 15em;
+  padding-top: 10em;
 }
 
 h1 {
@@ -53,52 +55,108 @@ p {
 }
 
 .black-back {
-  background-color: rgba(0,0,0, .2);
+  background-color: rgba(0, 0, 0, .2);
   margin-left: 5em;
   margin-right: 5em;
-
 }
 
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0 50%;
   }
 }
 
 @-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
 
 @keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-form {
-  padding: 5em;
-  display: inline-flex;
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
 
-input {
-  
+form {
+  padding: 2em;
+  display: block;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 50%;
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  cursor: pointer;
+  width: 10%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 75%;
+}
+
+input[type=email]:focus {
+  width: 75%;
+}
+
+textarea:focus {
+  width: 75%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+  width: 50%;
 }
